@@ -5,7 +5,7 @@
 #define VERSTRING ZSH_VERSION "-win32" 
 
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
-IDI_ICON1 ICON "zsh.ico"
+IDI_ICON1 ICON "BSDLOGO.ICO"
 VS_VERSION_INFO VERSIONINFO
 FILEVERSION 3, 0, 8, 1
 PRODUCTVERSION 3, 0, 8, 1
@@ -22,6 +22,7 @@ FILETYPE VFT_APP
  {
   BLOCK "000004E4"
   {
+#if 0
    VALUE "CompanyName", "Zsh.org\x0"
    VALUE "FileDescription", "The Z Shell\x0"
 #if defined(__MINGW32__) && !defined(__MINGW64__)
@@ -44,6 +45,7 @@ FILETYPE VFT_APP
    VALUE "LegalCopyright", "© Not yet\x0"
    VALUE "OriginalFilename", "Zsh.exe\x0"
    VALUE "ProductName", "Z Shell\x0"
+#endif
   }
  }
  BLOCK "VarFileInfo"
